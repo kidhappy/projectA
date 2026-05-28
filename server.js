@@ -7,7 +7,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(express.static("public"));
+res.sendFile(path.join(__dirname, "public", "dashboard.html"));
 
 // ================= DATABASE =================
 
